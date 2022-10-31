@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/static/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+nav a {
+  color: whitesmoke;
+  font-family: "Pacifico", cursive;
+  text-decoration: none;
+  font-size: 25px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: azure;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #bb1205;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.sign {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.sign h3 {
+  text-align: left;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  margin-top: 2%;
+}
+.sign h3 span {
+  color: white;
+  font-size: 55px;
+  font-family: "Pacifico", cursive;
+}
+.sign h4 {
+  font-family: "Gemunu Libre", sans-serif;
+  color: chartreuse;
+
+  font-size: 20px;
+  margin-bottom: 4%;
+}
+.sign a {
+  text-decoration: none;
+}
+.sign .btn {
+  border-radius: 20px;
+  background: transparent;
+
+  margin-bottom: 1%;
+  font-size: 20px;
+  color: bisque;
+  font-family: sans-serif;
+
+  border: 2px solid white;
+  height: 50px;
+  width: 300px;
+  padding: 10px 25px 10px 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sign .btn:hover {
+  transition: ease;
+  transition-delay: 3ms;
+  background-color: crimson;
+  color: black;
+}
+
+.p2 {
+  min-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(215, 8, 8, 0.768) , rgba(85, 19, 19, 0.516));
+  
+  position: relative;
+}
+.p2 .feat {
+  align-items: center;
+
+  left: 50%;
+  top: 50%;
+}
+.p2 .feat h3 {
+  margin-top: 4%;
+  color: black;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin-bottom: 1%;
+}
+
+/***body ***/
+/*----------------------------1 box-----------------------------------*/ 
+
+.content{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 300px;
+  background-image: linear-gradient(to left, rgba(215, 8, 8, 0.768) , rgba(97, 21, 21, 0.516));
+ 
+}
+.content .con1{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px 170px;
+  background-image: linear-gradient(to left, rgba(215, 8, 8, 0.768) , rgba(97, 21, 21, 0.516));
+
+  width:100%;
+  
+
+}
+.content .con1 img{
+  height:200px;
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 10px;
+
+}
+
+.content .con1 h3{
+  margin-left: 50px;
+  
+  margin-bottom: 25px;
+  font-family: 'Roboto',sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+
+  
+
+} 
+
+
+.content .con1 p{
+  margin-left: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+background-color: rgb(255, 255, 255);
+width: 100%;}
+  /*----------------------------2 box-----------------------------------*/ 
+
+.content1 {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 0;
+  background-color: #bbe4e9;
+}
+.content1 .con2{
+  display: flex;
+  flex-direction: row;
+  padding: 15px 170px;
+  width: 100%;
+  
+
+}
+.content1 .con2 img{
+  height:200px;
+  width: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+.content1 .con2 h3{
+  margin-left: 50px; 
+  margin-bottom: 25px;
+  font-family: 'Roboto',sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+} 
+.content1 .con2 p{
+  margin-left: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+background-color: rgb(255, 255, 255);
+width: 100%;
+}
+ /*-----------------------------3-box----------------------------------*/
+ .content2{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 300px;
+  background-color: #bbe4e9;
+}
+.content2 .con3{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px 170px;
+  width:100%;
+}
+.content2 .con3 img{
+  height:200px;
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 10px;
+
+}
+
+.content2 .con3 h3{
+  margin-left: 50px;
+  margin-bottom: 25px;
+  font-family: 'Roboto',sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+} 
+.content2 .con3 p{
+  margin-left: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+background-color: rgb(255, 255, 255);
+width: 100%;
+}
+
+
+/**
+footer img {
+  width: 30px;
+}
+
+ul li {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.foot{
+  width: 100vw;
+  height: 50vh;
+  bottom: 0;
+  position: relative;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+**/
