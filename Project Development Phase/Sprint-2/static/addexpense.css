@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Dancing+Script:wght@500&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  background-color: crimson;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .logo {
+  display: flex;
+  gap: 10px;
+}
+
+.nav .logo i {
+  text-align: center;
+  color: bisque;
+  font-size: 30px;
+
+  padding: 8px;
+}
+.nav .logo h3 {
+  color: bisque;
+  font-size: 30px;
+  font-family: "Poppins", cursive;
+  text-align: center;
+}
+.nav .name {
+  text-align: center;
+  color: bisque;
+  font-size: 20px;
+  font-family: "Poppins", cursive;
+}
+.cont {
+  background-color: burlywood;
+  height: auto;
+  
+  border: 4px solid goldenrod;
+  margin: 80px;
+  border-radius: 30px;
+  padding: 30px;
+}
+.cont .logo {
+  color: crimson;
+  font-size: 50px;
+}
+.cont .logo i {
+  border: 4px solid goldenrod;
+  border-radius: 50%;
+  padding: 10px;
+}
+.cont .profile {
+  margin-top: 20px;
+  width: 60%;
+}
+.cont .profile table {
+  padding: 20px;
+  width: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-bottom: 20px;
+}
+.cont .profile tr {
+  
+ 
+  background-color: azure;
+}
+.cont .profile td {
+  padding: 10px;
+  text-align: center;
+}
+.cont .profile th {
+  background-color: crimson;
+  color: bisque;
+  padding: 5px;
+}
+.cont .profile a {
+ 
+  background-color: gold;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+input{
+    width: 200px;
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    
+}
+input:hover{
+    border-bottom: 2px solid gold ;
+}
+select{
+    width: 200px;
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+
+}
+select:hover{
+    border-bottom: 2px solid gold ;
+
+}
