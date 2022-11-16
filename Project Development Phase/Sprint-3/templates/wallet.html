@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/17041f96e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/218/218390.png"
+      type="image/x-icon"
+    />
+    <title>Wallet</title>
+    <link rel="stylesheet" href="/static/wallet.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="/dashboard"> <i class="fas fa-arrow-left"></i></a>
+        <h3>Wallet</h3>
+      </div>
+      <div class="name">
+        <h3>{{name}}</h3>
+      </div>
+    </div>
+    <center>
+      <div align="center" class="mail">
+        <h3>Wallet</h3>
+        <p>{{a}}</p>
+        <div class="box">
+          <div class="b1">
+            <h5>Wallet Balance:</h5>
+            <h6>{{s}}</h6>
+          </div>
+          <div class="b1">
+            <h5>Existing Limit:</h5>
+            <h6>{{l}}</h6>
+          </div>
+        </div>
+        <form action="/wallet" method="post">
+          <table>
+            <tr>
+              <td><h2>Add To Wallet:</h2></td>
+              <td><input type="text" name="Amount" id="Amount" /></td>
+            </tr>
+          </table>
+          <button type="submit"><a>Enter</a></button>
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
