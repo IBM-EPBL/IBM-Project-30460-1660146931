@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/help.css" />
+    <script
+      src="https://kit.fontawesome.com/17041f96e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/218/218390.png"
+      type="image/x-icon"
+    />
+    <title>Help</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="/dashboard"> <i class="fas fa-arrow-left"></i></a>
+        <h3>Help</h3>
+      </div>
+      <div class="name">
+        <h3>{{name}}</h3>
+      </div>
+    </div>
+    <div align="center" class="mail">
+      <h3>Ask Wallet Chat Bot</h3>
+      <p>
+        For Further Queries you can mail to our technical team by clicking the
+        send Mail Button below ..
+      </p>
+      <a
+        href="mailto:team.personelexpensetracker@gmail.com?subject = Feedback & body = Message"
+        ><i class="fas fa-envelope"></i>
+        <h2>Send Mail</h2></a
+      >
+    </div>
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "9dc4a90e-9254-4048-872a-aca2a91edf97", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "1067f2b5-f4cd-4ced-b7ae-ab425c8ad9f0", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
