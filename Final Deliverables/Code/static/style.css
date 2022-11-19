@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Dancing+Script:wght@500&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  background-color: crimson;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .logo {
+  display: flex;
+  gap: 10px;
+}
+
+.nav .logo i {
+  text-align: center;
+  color: bisque;
+  font-size: 30px;
+
+  padding: 8px;
+}
+.nav .logo h3 {
+  color: bisque;
+  font-size: 30px;
+  font-family: "Poppins", cursive;
+  text-align: center;
+}
+.nav .name {
+  text-align: center;
+  color: bisque;
+  font-size: 20px;
+  font-family: "Poppins", cursive;
+}
+.border {
+  background-color: bisque;
+  width: fit-content;
+
+  height: auto;
+  margin: 150px;
+  padding: 20px;
+  border: 3px solid goldenrod;
+  border-radius: 50px;
+}
+.border .header {
+  width: fit-content;
+  font-family: Poppins;
+  font-size: 20px;
+  color: crimson;
+  letter-spacing: 3px;
+}
+form {
+  width: fit-content;
+  height: auto;
+}
+.border h3 {
+  width: fit-content;
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+table {
+  padding: 30px;
+  width: auto;
+  border-spacing: 0 30px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 30px;
+}
+tr {
+  background-color: azure;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: crimson;
+  color: bisque;
+  padding: 5px;
+}
+.border .btn {
+  background-color: gold;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+  border: 2px solid grey;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: green;
+  font-size: 14px;
+  width: fit-content;
+}
+a {
+  color: crimson;
+}
+input {
+  width: 200px;
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}

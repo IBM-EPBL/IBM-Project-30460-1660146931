@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/edit.css" />
+    <script
+      src="https://kit.fontawesome.com/17041f96e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/218/218390.png"
+      type="image/x-icon"
+    />
+    <title>Edit</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="/profile"> <i class="fas fa-arrow-left"></i></a>
+        <h3>Edit Profile</h3>
+      </div>
+      <div class="name">
+        <h3>{{name}}</h3>
+      </div>
+    </div>
+    <center>
+      <div class="cont" align="center">
+        <div class="logo">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="profile">
+          <form action="/edit" method="post">
+            <table>
+              <tr>
+                <th>Name:</th>
+                <td>
+                  <input
+                    type="text"
+                    name="Name"
+                    id="Name"
+                    placeholder="Enter the name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>E-Mail:</th>
+                <td>
+                  <input
+                    type="text"
+                    name="Email"
+                    id="Email"
+                    placeholder="Enter the e-mail"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>Mobile No:</th>
+                <td>
+                  <input
+                    type="text"
+                    name="Mobileno"
+                    id="Mobileno"
+                    placeholder="Enter the mobile number"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>Job:</th>
+                <td>
+                  <input
+                    type="text"
+                    name="Job"
+                    id="Job"
+                    placeholder="Enter the Job"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>Set limit:</th>
+                <td>
+                  <input
+                    type="number"
+                    name="Limit"
+                    id="Limit"
+                    placeholder="Set minimum limit"
+                  />
+                </td>
+              </tr>
+            </table>
+            <button>Edit/Update</button>
+          </form>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

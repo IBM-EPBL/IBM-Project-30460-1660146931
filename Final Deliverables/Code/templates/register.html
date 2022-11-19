@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/17041f96e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/218/218390.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="/login"> <i class="fas fa-arrow-left"></i></a>
+        <h3>Register</h3>
+      </div>
+      <!-- <div class="name">
+        <h3>Name</h3>
+      </div> -->
+    </div>
+    <center>
+      <div align="center" class="border">
+        <div class="header">
+          <h1>Register</h1>
+        </div>
+
+        <form action="/register" method="post">
+          <h3 class="msg">{{msg}}</h3>
+          <table>
+            <tr>
+              <th>Username:</th>
+              <td>
+                <input
+                  id="Name"
+                  name="Name"
+                  type="text"
+                  placeholder="Enter Your Username"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Password:</th>
+              <td>
+                <input
+                  id="Password"
+                  name="Password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>E-Mail:</th>
+              <td>
+                <input
+                  id="Email"
+                  name="Email"
+                  type="text"
+                  placeholder="Enter Your Email ID"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Mobile-no:</th>
+              <td>
+                <input
+                  id="Mobileno"
+                  name="Mobileno"
+                  type="text"
+                  placeholder="Enter Your Mobileno"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Job:</th>
+              <td>
+                <input
+                  id="Job"
+                  name="Job"
+                  type="text"
+                  placeholder="Enter Your Job"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Wallet amount:</th>
+              <td>
+                <input
+                  id="Amount"
+                  name="Amount"
+                  type="text"
+                  placeholder="Enter amount to keep in wallet"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Set limit:</th>
+              <td>
+                <input
+                  id="Limit"
+                  name="Limit"
+                  type="text"
+                  placeholder="Enter the minimum limit"
+                  class="textbox"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <input type="submit" class="btn" value="Sign Up" />
+        </form>
+
+        <p class="bottom">
+          Already have an account?
+          <a class="bottom" href="{{url_for('login')}}"> Sign In here</a>
+        </p>
+      </div>
+    </center>
+  </body>
+</html>
